@@ -31,8 +31,6 @@ class OpenCSV:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 all_data.append(row)
-            print(all_data)
-
             return all_data
 
 
