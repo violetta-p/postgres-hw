@@ -11,8 +11,7 @@ CREATE TABLE employee
 
 CREATE TABLE customer
 (
-    id SERIAL PRIMARY KEY,
-    customer_id varchar(100) UNIQUE NOT NULL,
+    customer_id varchar(100) PRIMARY KEY,
 	company_name varchar(100) NOT NULL,
 	contact_name varchar(100) NOT NULL
 );

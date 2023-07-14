@@ -66,7 +66,7 @@ class Customers(OpenCSV, Writer):
                 item["contact_name"],
             )
 
-            curs.execute(f"INSERT INTO customer VALUES (DEFAULT,%s, %s, %s)", all_data)
+            curs.execute(f"INSERT INTO customer VALUES (%s, %s, %s)", all_data)
             conn.commit()
 
 
